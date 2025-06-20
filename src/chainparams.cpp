@@ -116,6 +116,16 @@ public:
 
         genesis = CreateGenesisBlock(1718496000, 3291, 0x1e0ffff0, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
+
+        std::cout << "Genesis Block:\n";
+        std::cout << "  Hash: " << genesis.GetHash().ToString() << std::endl;
+        std::cout << "  Merkle Root: " << genesis.hashMerkleRoot.ToString() << std::endl;
+        std::cout << "  Time: " << genesis.nTime << std::endl;
+        std::cout << "  Bits: " << std::hex << genesis.nBits << std::dec << std::endl;
+        std::cout << "  Nonce: " << genesis.nNonce << std::endl;
+        std::cout << "  Version: " << genesis.nVersion << std::endl;
+        std::cout << "  Transactions: " << genesis.vtx.size() << std::endl;
+
         assert(consensus.hashGenesisBlock == uint256S("0x00005795fd321c935b31a54ad784eda38dce6e4d3450e434d713e0ef1ee39fcb"));
         assert(genesis.hashMerkleRoot == uint256S("0x681b537ee9339392b524c9a5d6dfac089bbdb945cbdb76d77ac81b3ee4f33260"));
 
@@ -219,6 +229,14 @@ public:
 
         genesis = CreateGenesisBlock(1718496000, 293345, 0x1e0ffff0, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
+        std::cout << "Genesis Block:\n";
+        std::cout << "  Hash: " << genesis.GetHash().ToString() << std::endl;
+        std::cout << "  Merkle Root: " << genesis.hashMerkleRoot.ToString() << std::endl;
+        std::cout << "  Time: " << genesis.nTime << std::endl;
+        std::cout << "  Bits: " << std::hex << genesis.nBits << std::dec << std::endl;
+        std::cout << "  Nonce: " << genesis.nNonce << std::endl;
+        std::cout << "  Version: " << genesis.nVersion << std::endl;
+        std::cout << "  Transactions: " << genesis.vtx.size() << std::endl;
         assert(consensus.hashGenesisBlock == uint256S("0x4966625a4b2851d9fdee139e56211a0d88575f59ed816ff5e6a63deb4e3e29a0"));
         assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
 
@@ -303,6 +321,14 @@ public:
 
         genesis = CreateGenesisBlock(1718496000, 0, 0x207fffff, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
+        std::cout << "Genesis Block:\n";
+        std::cout << "  Hash: " << genesis.GetHash().ToString() << std::endl;
+        std::cout << "  Merkle Root: " << genesis.hashMerkleRoot.ToString() << std::endl;
+        std::cout << "  Time: " << genesis.nTime << std::endl;
+        std::cout << "  Bits: " << std::hex << genesis.nBits << std::dec << std::endl;
+        std::cout << "  Nonce: " << genesis.nNonce << std::endl;
+        std::cout << "  Version: " << genesis.nVersion << std::endl;
+        std::cout << "  Transactions: " << genesis.vtx.size() << std::endl;
         assert(consensus.hashGenesisBlock == uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"));
         assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
 
